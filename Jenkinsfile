@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/PAVITHRANAV/Proj-3.git'
+                git branch: '*/master', url: 'https://github.com/PAVITHRANAV/Proj-3.git'
             }
         }
         stage('Build') {
